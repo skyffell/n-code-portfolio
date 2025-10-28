@@ -1,0 +1,27 @@
+{
+  "name": "n-code-team-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio website for N-code Team - Fullstack developers with advanced typing animations",
+  "main": "index.html",
+  "scripts": {
+    "dev": "live-server --port=3000",
+    "build": "echo 'Build complete'",
+    "deploy": "echo 'Deploy to production'",
+    "type-demo": "node -e \"console.log('Typing animations are active!')\""
+  },
+  "keywords": [
+    "portfolio",
+    "fullstack",
+    "python",
+    "javascript",
+    "flask",
+    "fastapi",
+    "typing-animations",
+    "css-animations"
+  ],
+  "author": "N-code Team",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}

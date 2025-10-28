@@ -1,0 +1,311 @@
+/* деффолт */
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 30px;
+    }
+    
+    .team-name {
+        font-size: 3rem;
+    }
+    
+    .developer-cards {
+        gap: 2rem;
+    }
+    
+    .workflow {
+        gap: 1.5rem;
+    }
+    
+    .stack-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .project-grid {
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
+    
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+}
+
+/* Мобила 768 */
+@media (max-width: 768px) {
+    section {
+        padding: 60px 0;
+    }
+    
+    .container {
+        padding: 0 20px;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .team-name {
+        font-size: 2.5rem;
+    }
+    
+    .team-tagline {
+        font-size: 1.1rem;
+    }
+    
+    .developer-cards {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .dev-card {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .synergy {
+        order: -1;
+        margin-bottom: 1rem;
+    }
+    
+    .workflow {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .process-arrow {
+        transform: rotate(90deg);
+    }
+    
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .project-card {
+        min-width: unset;
+    }
+    
+    .comparison {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .comparison-card {
+        min-width: unset;
+        width: 100%;
+    }
+    
+    .vs-circle {
+        order: -1;
+    }
+    
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+    
+    .stat-number {
+        font-size: 2.5rem;
+    }
+    
+    .footer-links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .project-filters {
+        flex-wrap: wrap;
+    }
+    
+    .filter-btn {
+        flex: 1;
+        min-width: 120px;
+        text-align: center;
+    }
+}
+
+/* Маленькая мобила */
+@media (max-width: 480px) {
+    .team-name {
+        font-size: 2rem;
+    }
+    
+    .team-tagline {
+        font-size: 1rem;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .section-subtitle {
+        font-size: 1rem;
+    }
+    
+    .dev-card {
+        padding: 1.5rem;
+    }
+    
+    .process-step {
+        padding: 1.5rem;
+    }
+    
+    .stack-category {
+        padding: 1.5rem;
+    }
+    
+    .project-info {
+        padding: 1.5rem;
+    }
+    
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-form {
+        padding: 1.5rem;
+    }
+    
+    .project-links {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .project-link {
+        justify-content: center;
+    }
+    
+    .n-code-logo {
+        font-size: 2.5rem;
+    }
+    
+    .preloader-content {
+        padding: 0 20px;
+    }
+}
+
+/* Большой экран */
+@media (min-width: 1440px) {
+    .container {
+        max-width: 1400px;
+    }
+    
+    .team-name {
+        font-size: 5rem;
+    }
+    
+    .section-title {
+        font-size: 3rem;
+    }
+}
+
+/* Мобила */
+@media (max-height: 700px) and (orientation: landscape) {
+    .hero {
+        min-height: 700px;
+        padding: 100px 0;
+    }
+    
+    .team-name {
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .team-tagline {
+        margin-bottom: 2rem;
+    }
+    
+    .developer-cards {
+        margin-bottom: 2rem;
+    }
+}
+
+/* Принт стайлы */
+@media print {
+    .preloader,
+    .scroll-indicator,
+    .cta-button,
+    .project-links,
+    .social-links,
+    .contact-form {
+        display: none !important;
+    }
+    
+    body {
+        background: white !important;
+        color: black !important;
+    }
+    
+    .dev-card,
+    .process-step,
+    .stack-category,
+    .project-card,
+    .comparison-card,
+    .stat-item {
+        background: white !important;
+        border: 1px solid #ddd !important;
+        color: black !important;
+    }
+    
+    .section-title {
+        background: none !important;
+        -webkit-text-fill-color: black !important;
+        color: black !important;
+    }
+}
+
+/* Reduced motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Высокая контрастность */
+@media (prefers-contrast: high) {
+    :root {
+        --bg-primary: #000000;
+        --bg-secondary: #111111;
+        --text-primary: #ffffff;
+        --text-secondary: #cccccc;
+        --card-bg: #222222;
+    }
+    
+    .accent-frontend {
+        color: #00ffff !important;
+    }
+    
+    .accent-backend {
+        color: #ff5500 !important;
+    }
+}
+
+/* Черная тема */
+@media (prefers-color-scheme: dark) {
+    /* Тема всегда черная */
+}
+
+/* Адптив под девайсы с тач-падом */
+@media (hover: none) and (pointer: coarse) {
+    .dev-card:hover,
+    .project-card:hover,
+    .stat-item:hover,
+    .tech-item:hover,
+    .contact-method:hover {
+        transform: none;
+    }
+    
+    .filter-btn:hover {
+        background: var(--bg-secondary);
+        color: var(--text-secondary);
+    }
+    
+    .filter-btn.active {
+        background: linear-gradient(135deg, var(--accent-frontend), var(--accent-backend));
+        color: white;
+    }
+}
