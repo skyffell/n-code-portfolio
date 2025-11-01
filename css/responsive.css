@@ -517,36 +517,21 @@
         padding: 0.5rem 0.8rem;
     }
 }
-/* Фикс для стрелочки на мобильных */
+/* Более конкретный фикс для стрелочки */
 @media (max-width: 768px) {
+    .team-presentation {
+        padding-bottom: 2rem;
+    }
+    
     .cta-button {
         position: relative;
+        z-index: 20;
+        transform: none !important;
+    }
+    
+    .scroll-indicator {
+        position: absolute;
+        bottom: 1rem;
         z-index: 10;
-        margin-top: 1rem;
-    }
-    
-    .scroll-indicator {
-        z-index: 5;
-        bottom: 3rem; /* Поднимаем стрелочку выше */
-    }
-    
-    .hero {
-        padding-bottom: 4rem; /* Добавляем место снизу */
-    }
-}
-
-@media (max-width: 480px) {
-    .cta-button {
-        margin-top: 0.5rem;
-        padding: 0.8rem 1.5rem;
-        font-size: 0.9rem;
-    }
-    
-    .scroll-indicator {
-        bottom: 2.5rem;
-    }
-    
-    .hero {
-        padding-bottom: 3rem;
     }
 }
