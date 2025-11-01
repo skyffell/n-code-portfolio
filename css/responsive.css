@@ -517,3 +517,36 @@
         padding: 0.5rem 0.8rem;
     }
 }
+/* Фикс для стрелочки на мобильных */
+@media (max-width: 768px) {
+    .cta-button {
+        position: relative;
+        z-index: 10;
+        margin-top: 1rem;
+    }
+    
+    .scroll-indicator {
+        z-index: 5;
+        bottom: 3rem; /* Поднимаем стрелочку выше */
+    }
+    
+    .hero {
+        padding-bottom: 4rem; /* Добавляем место снизу */
+    }
+}
+
+@media (max-width: 480px) {
+    .cta-button {
+        margin-top: 0.5rem;
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+    }
+    
+    .scroll-indicator {
+        bottom: 2.5rem;
+    }
+    
+    .hero {
+        padding-bottom: 3rem;
+    }
+}
